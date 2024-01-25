@@ -1,0 +1,222 @@
+<!--boilerplate code -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+
+    <!--meta viewport tag -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="https://cdn.glitch.global/ba8b0e33-7a9f-435f-8466-47132f3face5/pastel-purple-icon.png?v=1705985405790"
+    />
+
+    <!-- Title -->
+    <title>Survey Form</title>
+
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+
+  </head>
+
+  <body>
+    <!-- this is the start of content -->
+    <main>
+      <h1 id="title"><b>Textile Survey Form</b></h1>
+
+      <p id="description">Tell us about your favorite textiles!</p>
+
+      <!-- form element: 
+              <input>
+              <label>
+              <select>
+              <textarea>
+              <button>
+              <fieldset>
+              <legend>
+              <datalist>
+              <output>
+              <option>
+              <optgroup>
+  -->
+      <form id="survey-form">
+        <!-- Name -->
+        <label id="name-label" for="name"> Name: </label>
+        <input
+          id="name"
+          type="text"
+          name="name"
+          class="form-control"
+          required
+          placeholder="Your Name"
+        />
+
+        <!-- email  -->
+        <label id="email-label" for="email"> Email: </label>
+        <input
+          id="email"
+          type="email"
+          class="form-control"
+          required
+          placeholder="Your email"
+        />
+
+        <!-- Age (number) -->
+        <label id="number-label" for="number"> Age (optional): </label>
+        <input
+          id="number"
+          type="number"
+          class="form-control"
+          min="19"
+          max="100"
+          placeholder="Your age"
+        />
+
+        <p>1. What is your favorite type of natural textile?</p>
+
+        <!-- select field -->
+        <label id="dropdown" for="natural-textiles">Choose a textile:</label>
+        <select id="textile" name="textile" class="form-control">
+          <option value="bamboo">Bamboo</option>
+          <option value="coir">Coir</option>
+          <option value="cotton">Cotton</option>
+          <option value="hemp">Hemp</option>
+          <option value="jute">Jute</option>
+          <option value="linen">Linen</option>
+          <option value="ramie">Ramie</option>
+          <option value="silk">Silk</option>
+          <option value="soybean">Soybean</option>
+          <option value="wool">Wool</option>
+        </select>
+
+        <!-- radio buttons -->
+        <p>2. Which is a quality you look for in a textile?</p>
+        <label for="durability">
+          <input
+            name="user-recommend"
+            value="durability"
+            type="radio"
+            class="input-radio"
+          />
+          Durability
+        </label>
+        <label for="texture">
+          <input
+            name="user-recommend"
+            value="texture"
+            type="radio"
+            class="input-radio"
+          />
+          Texture
+        </label>
+
+        <label for="ethical-sourcing">
+          <input
+            name="user-recommend"
+            value="ethical-sourcing"
+            type="radio"
+            class="input-radio"
+          />
+          Ethical sourcing
+        </label>
+
+        <label for="sustainability">
+          <input
+            name="user-recommend"
+            value="sustainability"
+            type="radio"
+            class="input-radio"
+          />
+          Sustainability
+        </label>
+
+        <p>
+          3. How can you incorporate upcycled textiles into your home decor or
+          fashion? (Check all that apply)
+        </p>
+        <!-- checkbox -->
+        <input
+          type="checkbox"
+          id="upcycled1"
+          name="upcycled1"
+          value="cushion-covers"
+        />
+        <label for="upcycled1"> Cushion covers</label><br />
+
+        <input type="checkbox" id="upcycled2" name="upcycled2" value="dyes" />
+        <label for="upcycled2"> Experiment with dyeing </label><br />
+
+        <input
+          type="checkbox"
+          id="upcycled3"
+          name="upcycled3"
+          value="oldjeans-canvasbags"
+        />
+        <label for="upcycled3"> Upcycle old denim jeans or canvas bags</label
+        ><br />
+
+        <input
+          type="checkbox"
+          id="upcycled4"
+          name="upcycled4"
+          value="rug-making"
+        />
+        <label for="upcycled4"> Rug making</label><br />
+
+        <input
+          type="checkbox"
+          id="upcycled5"
+          name="upcycled5"
+          value="throw-blankets"
+        />
+        <label for="upcycled5"> Patchwork throw blankets</label><br />
+
+        <!-- textarea element-->
+        <p>
+          Open doors and minds! Share your go-to resources, inspiring projects,
+          or anything that sparks your thoughts on textiles.
+        </p>
+
+        <label for="textarea"
+          >Comment area: <br /><textarea
+            id="comments"
+            name="textarea"
+            class="input-textarea"
+            placeholder="Write your comment here..."
+            columns="100"
+            rows="5"
+          >
+        Write your comment here...
+        </textarea
+          ></label
+        ><br />
+
+        <br />
+        <button
+          id="submit"
+          type="submit"
+          onclick="alert('Thanks!! 🥳 🎉')"
+          class="submit-button"
+        >
+          Submit
+        </button>
+      </form>
+    </main>
+    <br />
+    <footer>
+      <a name="bottom">Made with 🖤 by Majo.</a>
+      <br />
+
+      <!-- Jump back to the top of the page-->
+      <a href="#top">
+        <link
+          rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+        />
+        <span class="material-symbols-outlined"> arrow_upward </span>
+      </a>
+    </footer>
+  </body>
+</html>
