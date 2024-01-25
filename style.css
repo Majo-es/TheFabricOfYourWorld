@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@300&display=swap');
+
+*{
+  font-family: 'Noto Sans Mono', monospace;
+}
+
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  margin: 1rem;
+  line-height: 1.5;
+  background: #D0E4F5 none no-repeat scroll 0px 0px;
+}
+
+
+.input-textarea{
+  width: 350px;
+  height: 100px;
+  
+}
+.submit-button {
+  background-color: #3399ff;
+  border: none;
+  color: white;
+  padding: 16px 30px;
+  border-radius: 12px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  width: 350px;
+  cursor: pointer;
+  transition-duration: 0.4s;
+}
+.submit-button:hover{
+  background-color: #04AA6D;
+  color: white;
+}
+/*.submit-button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666666;
+  transform: translateY(4px);
+}
+*/ 
+
+
+
