@@ -1,4 +1,11 @@
 # TheFabricOfYourWorld
+This project was originally built on Glitch.me, a pioneering platform that made web development accessible to millions of creators from 2016-2025. Following Glitch's transition away from app hosting, this project has been migrated to CodePen to preserve its functionality and continue its development.
+* Original Platform: Glitch.me (2016-2025)
+* Migration Date: July 14th, 2025
+* Current Platform: CodePen
+
+
+
 ## This project offers a basic survey built with HTML and CSS to gather user input on textiles. It allows you to:
 - Ask questions: Simple multiple-choice questions related to textile preferences (e.g., favorite fiber type).
 - Collect responses: Users can easily select their answers through radio buttons or checkboxes.
